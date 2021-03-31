@@ -8,14 +8,13 @@
   {%- assign site_sliders = site.data.sliders | uniq -%}
   {%- assign iis_slider_array = iis_slider_array | concat: site_sliders | uniq -%}
 
-hello {{ iis_slider_array }} {{ layout_sliders }} {{ page_sliders }} {{ site_sliders }}
+hello {{ iis_slider_array }} hello {{ layout_sliders }} hello {{ page_sliders }} hello {{ site_sliders }}
 {% if iis_slider_array != empty %}
   <script src="{{ "/stylesheets/ideal-image-slider.min.js" | relative_url }}"></script>
   <script src="{{ "/stylesheets/iis-bullet-nav.js" | relative_url }}"></script>
   <script src="{{ "/stylesheets/iis-captions.js" | relative_url }}"></script>
   <script>
-  {% for selector in iis_slider_array -%}
-    {%- assign slider = site.data.sliders | where:"selector",selector | first -%}
+    {%- assign slider = iis_slider_array[0] -%}
     {%- assign settings = slider.settings -%}
     Hi {{ slider }} {{ settings }} {{site.data.sliders}}
     var {{ slider.selector }} = new IdealImageSlider.Slider({
@@ -58,6 +57,5 @@ hello {{ iis_slider_array }} {{ layout_sliders }} {{ page_sliders }} {{ site_sli
     {{ slider.selector }}.addCaptions();
     {% endif -%}
     {{ slider.selector }}.start();
-  {% endfor -%}
   </script>
 {%- endif -%}
