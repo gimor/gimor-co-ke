@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
 title: GiMor Naturals
 description: Take Care of You
-iis_slider_array: []
+iis_slider_array: ["images/0.jpeg", "images/1.jpeg"]
