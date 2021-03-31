@@ -20,11 +20,7 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    
-    <!-- Slider CSS -->
-    <link rel="stylesheet" href="{{ "/stylesheets/ideal-image-slider.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/stylesheets/default.css" | relative_url }}">    
-    
+        
     {% include slider_styles.html %}
 
   </head>
@@ -36,29 +32,7 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
     </header>
-    
-    <!-- Slider -->
-    <script src="{{ "/stylesheets/ideal-image-slider.min.js" | relative_url }}"></script>
-    <script src="{{ "/stylesheets/iis-bullet-nav.js" | relative_url }}"></script>
-    <script src="{{ "/stylesheets/iis-captions.js" | relative_url }}"></script>
-    <!-- Sliders on pages -->
-    {% for script in page.iis_slider_scripts %}
-      {{ script }}
-    {% endfor %}
-    {% slider %}
-      {% for img in page.iis_slider_array %}
-        ![alt text 1]({{ img }})
-      {% endfor %}
-    {% endslider %}
-    {% slider %}
-      ![alt text 1](/images/0.jpeg)
-      ![alt text 2](/images/1.jpeg)
-    {% endslider %}
-    <div id="slider">
-      <img src="/images/0.jpeg" alt="alt text 1">
-      <img src="/images/1.jpg" alt="alt text 2">
-    </div>
-    
+        
     {% include slider.html selector="example_slider" %}
 
     <main id="content" class="main-content" role="main">
