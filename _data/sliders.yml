@@ -2,9 +2,15 @@
   captions: true
   images:
     - src: /images/0.jpeg
-      alt: image one
+      alt: All
     - src: /images/1.jpeg
-      alt: image two
+      alt: Coconut Oil
+    - src: /images/2.jpeg
+      alt: Honey
+    - src: /images/3.jpeg
+      alt: Hibiscus
+    - src: /images/4.jpeg
+      alt: Chia Seed Oil
   settings:
     height: "'400'"
     effect: "'fade'"
