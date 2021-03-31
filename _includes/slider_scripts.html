@@ -10,9 +10,9 @@
 
 hello {{ iis_slider_array }} {{ layout_sliders }} {{ page_sliders }} {{ site_sliders }}
 {% if iis_slider_array != empty %}
-  <script src="{{ "/assets/js/slider/ideal-image-slider.min.js" | relative_url }}"></script>
-  <script src="{{ "/assets/js/slider/iis-bullet-nav.js" | relative_url }}"></script>
-  <script src="{{ "/assets/js/slider/iis-captions.js" | relative_url }}"></script>
+  <script src="{{ "/stylesheets/ideal-image-slider.min.js" | relative_url }}"></script>
+  <script src="{{ "/stylesheets/iis-bullet-nav.js" | relative_url }}"></script>
+  <script src="{{ "/stylesheets/iis-captions.js" | relative_url }}"></script>
   <script>
   {% for selector in iis_slider_array -%}
     {%- assign slider = site.data.sliders | where:"selector",selector | first -%}
