@@ -9,6 +9,9 @@
   {%- assign iis_slider_array = iis_slider_array | concat: site_sliders | uniq -%}
 
 hello {{ iis_slider_array }} hello {{ layout_sliders }} hello {{ page_sliders }} hello {{ site_sliders }}
+hi iis_slider_array[0]
+ho iis_slider_array[0].settings
+hey iis_slider_array[0].selector
 {% if iis_slider_array != empty %}
   <script src="{{ "/stylesheets/ideal-image-slider.min.js" | relative_url }}"></script>
   <script src="{{ "/stylesheets/iis-bullet-nav.js" | relative_url }}"></script>
