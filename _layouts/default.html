@@ -25,8 +25,6 @@
 
   </head>
   
-  {% include slider_scripts.html %}
-  
   <body>
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
@@ -40,7 +38,7 @@
       <a class="twitter-timeline" href="https://twitter.com/GimorNaturals?ref_src=twsrc%5Etfw">GimorNaturals</a> 
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
     </main>
-    
-    
+      
+    {% include slider_scripts.html %}
   </body>
 </html>
