@@ -31,10 +31,13 @@
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
     </header>
         
-    {% include slider.html selector="example_slider" %}
+
 
     <main id="content" class="main-content" role="main">
       {{ content }}
+      
+      {% include slider.html selector="example_slider" %}
+      
       <a class="twitter-timeline" href="https://twitter.com/GimorNaturals?ref_src=twsrc%5Etfw">GimorNaturals</a> 
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
     </main>
