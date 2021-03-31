@@ -12,5 +12,5 @@
     - src: /images/4.jpeg
       alt: Chia Seed Oil
   settings:
-    height: '16:9'
+    height: "'16:9'"
     effect: "'fade'"
