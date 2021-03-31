@@ -1,5 +1,6 @@
 # GiMor Naturals
 
-## Take Care of You
+## Take Care of You
 
-## Call/ WhatsApp 0704907539
+## Call/ WhatsApp 0704907539
+
