@@ -16,7 +16,6 @@ hello {{ iis_slider_array }} hello {{ layout_sliders }} hello {{ page_sliders }}
   <script>
     {%- assign slider = iis_slider_array[0] -%}
     {%- assign settings = slider.settings -%}
-    Hi {{ slider }} {{ settings }} {{site.data.sliders}}
     var {{ slider.selector }} = new IdealImageSlider.Slider({
       selector: '#{{ slider.selector }}',
       {% if settings.height -%}
