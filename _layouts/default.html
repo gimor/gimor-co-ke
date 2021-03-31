@@ -40,6 +40,11 @@
       {{ script }}
     {% endfor %}
     {% slider %}
+      {% for img in page.iis_slider_array %}
+        ![alt text 1]({{ img }})
+      {% endfor %}
+    {% endslider %}
+    {% slider %}
       ![alt text 1](/images/0.jpeg)
       ![alt text 2](/images/1.jpeg)
     {% endslider %}
