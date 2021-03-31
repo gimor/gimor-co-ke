@@ -1,12 +1,9 @@
 <!-- Jekyll Ideal Image Slider Include -->
 <!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include -->
 <!-- v1.8 -->
-{%- assign page_sliders = page.image_sliders | uniq -%}
-{%- assign layout_sliders = layout.image_sliders | uniq -%}
-{%- assign iis_slider_array = page_sliders | concat: layout_sliders | uniq -%}
 
-  {%- assign site_sliders = site.data.sliders | uniq -%}
-  {%- assign iis_slider_array = iis_slider_array | concat: site_sliders | uniq -%}
+{%- assign site_sliders = site.data.sliders | uniq -%}
+{%- assign iis_slider_array = iis_slider_array | concat: site_sliders | uniq -%}
 
 {% if iis_slider_array != empty %}
   <script src="{{ "/stylesheets/ideal-image-slider.min.js" | relative_url }}"></script>
